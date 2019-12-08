@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*bgvid info*/
+
+#bgvid {
+    
+    
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+/*    
+    background: url(../images/river.jpg) no-repeat;
+    background-size: cover;
+*/
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+hgroup {
+    text-align: center;
+    color:beige;
+/*    text-transform: capitalize;*/
+    
+}
+
+hgroup h1 {
+    font-family:'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 11.5vmax;
+    line-height: 11vmax;
+    text-shadow: 0px 0px 6px rgba(0,0,0);
+}
+
+h1 span {
+    color:coral;
+}
+
+hgroup h2 {
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-weight: 100;
+    font-size: 3vmax;
+}
+
+
+nav {
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+     z-index: 1;
+/*    justify-content: center;*/
+    
+    
+}
+
+nav a:link {
+    color: #fff;
+    background: #333;
+    padding: 20px;
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+/*    font-style: oblique;*/
+    
+    
+}
+
+
+nav a:visited {
+    color: cadetblue;
+}
+
+nav a:hover {
+    color: #333;
+    background-color: bisque;
+}
+
+
+
+
+
+
+
+
+

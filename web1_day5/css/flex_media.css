@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+nav {
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+     z-index: 1;
+/*    justify-content: center;*/
+    
+    
+}
+
+nav a:link {
+    color: #fff;
+    background: #333;
+    padding: 20px;
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+/*    font-style: oblique;*/
+    
+    
+}
+
+
+nav a:visited {
+    color: cadetblue;
+}
+
+nav a:hover {
+    color: #333;
+    background-color: bisque;
+}
+
+
+/*=== Mobile First ===*/
+section#parent {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    border: solid 10px #333;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 40px;
+}
+
+section#parent article {
+/*    flex: 1;*/
+    width:100%;
+    border: solid #333 10px;
+    font-family: gotham, helvetica, "sans-serif";
+/*    font-size: 4vmax;*/
+    color: #333;
+    padding: 20px;
+    
+    
+}
+
+
+#parent article h1 {
+    font-size: 36px;
+}
+
+#parent article p {
+    font-size: 16px;
+    line-height: 22px;
+}
+  
+/*
+.multi {
+    border: solid 20px coral;
+    
+}
+
+.multi article {
+    padding: 20px;
+    font-family: gotham, helvetica, "sans-serif";
+    
+}
+
+.multi article h1 {
+    font-size: 36px;
+    
+}
+
+.multi article p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    
+}
+*/
+
+
+
+
+/*=== Tablet Layout ===*/
+/*768px x 1024px*/
+
+@media only screen and (min-width: 768px) {
+    section#parent article {
+        width:50%;
+        text-align: center;
+        
+    }
+    
+/*
+    .multi article {
+       column-count: 2; 
+        column-gap: 20px;
+    
+    }
+*/
+}
+
+/* ==== Desktop Layout ==== */
+/* 1024px and higher. Inherits styles from: Mobile and Tablet layout.*/
+
+@media only screen and (min-width: 1024px ) {
+    section#parent article {
+        width:25%;
+
+    }
+    
+    section#parent article h1 {
+        font-size: 42px;
+        text-align: center;
+    }
+    
+    
+/*
+        .multi article {
+           column-count: 3; 
+            column-gap: 20px;
+    
+    }
+    
+*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

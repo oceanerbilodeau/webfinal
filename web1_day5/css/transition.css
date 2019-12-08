@@ -1,0 +1,447 @@
+*  {
+   padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+nav {
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+/*    justify-content: center;*/
+    
+    
+}
+
+nav a:link {
+    color: #fff;
+    background: #333;
+    padding: 20px;
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+/*    font-style: oblique;*/
+    
+    
+}
+
+
+nav a:visited {
+    color: cadetblue;
+}
+
+nav a:hover {
+    color: #333;
+    background-color: bisque;
+}
+
+
+
+
+section {
+    background: #eee;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background: #333;
+    transition: all .5s;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+div:hover {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    color: black;
+    text-align: center;
+    display: flex;
+/*    justify-content: center;*/
+/*    vertical-align: middle;*/
+/*    align-items: center;*/
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    }
+
+#s1 {
+    background: url(../images/newyork.city1.jpg) no-repeat fixed center center;
+    background-size: cover;
+    display: flex;
+    }
+#s1 article {
+    width: 40%;
+    background: #fff;
+    padding: 20px;
+    position: absolute;
+    right: 40px;
+    bottom: 10px;
+}
+
+/*
+@media only screen and (min-width: 1024px ) {
+    #s1 article {
+        min-width: 45%;
+*/
+    }
+}
+
+/*
+#s2 {
+    background: url(../images/newyork.city2.jpg) no-repeat fixed center center;
+    background-size: cover;
+    padding: 40px;
+    display: flex;
+    }
+#s2 article {
+    width: 40%;
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    
+}
+
+.top {
+    position: absolute;
+    bottom: 30%;
+    padding: 20px;
+    
+}
+
+.indent {
+    position: absolute;
+    bottom: 30%;
+    padding: 20px;
+   
+   
+    
+}
+
+.middle {
+    position: absolute;
+    right: 5%;
+    padding: 10px;
+        
+}
+
+.down {
+  position: absolute;
+    bottom: 30%; 
+    padding: 20px;
+    
+}
+
+
+
+
+
+*/
+
+section#trans {
+     
+    display: flex;
+}
+
+#trans { 
+    width: 100%;
+/*    min-height means that the minimum height it'll have will be 100percent of viewport height, and if its need to be bigger, it'll be height: auto which means . it'll resize*/
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    padding: 20px;   
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: url(../images/newyork.city2.jpg) no-repeat fixed center center;
+    background-size: cover;
+}
+
+#trans figure { 
+/*    if you want the picture to resize when you resize your browser window you need to give it a percentage not pixel, for the width*/
+    width: 300px;
+    height: 400px;
+/*    if you say margin it's margin for all 4 sides, otherwise you can specify : margin bottom, etc.*/
+    margin: 20px;
+/*    padding: 20px;*/
+    transition: all .3s;
+    color: #ffff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#trans figure:hover { 
+    box-shadow: 0px 0px 20px rgba(0,0,0,.4);
+
+}
+
+#f1 { 
+    background: url(../images/background.png) no-repeat center center;
+
+}
+
+#f1:hover { 
+    background: url(../images/bg5.jpg) no-repeat center left;
+
+} 
+
+#f2 { 
+    background: url(../images/background.png) no-repeat center center;
+
+}       
+
+#f2:hover { 
+    background: url(../images/bg6.jpg) no-repeat center left;
+    
+}
+    
+#f3 { 
+    background: url(../images/background.png) no-repeat center center;
+
+}
+
+#f3:hover { 
+    background: url(../images/bg4.jpg) no-repeat center right;
+    
+} 
+
+#f4 { 
+    background: url(../images/background.png) no-repeat center center;
+
+}
+
+#f4:hover { 
+    background: url(../images/bg1.jpg) no-repeat center right;
+}
+
+figure h2 { 
+    font-family: helvetica, gotham, arial, sans-serif;
+    font-size: 42px;
+/*    good thing to do when you have light text on lght background you can use a subtle text-shadow like the one below*/
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    position: absolute;
+    top:50px;
+    left: 0;
+    width: 100%;
+    transition: all .3s
+}
+
+figure:hover h2 { 
+    top:150px;
+}
+
+figure figcaption { 
+    background: rgba(0,0,0,.7);
+    padding: 20px;
+    font-family: georgia, serif;
+    font-style: italic;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    bottom:-100px;
+    transition: all .3s .2s;
+}
+
+figure:hover figcaption { 
+    bottom: 0;
+    text-align: center;
+
+}
+
+/* CSS ANIMATION EXAMPLE*/
+
+/*
+header h1 { 
+    font-family: Gotham, Helvetica, Arial, "sans-serif";
+    font-size: 72px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    animation: slider 1s;
+}
+
+@keyframes slider { 
+    from {opacity: 0; left: 200px;}
+    to { opacity: 1; left: 20px;}
+}
+
+#anim { 
+    width: 100px;
+    height: 100px;
+    background: orange;
+    display: block;
+    position: absolute;
+    right: 100px;
+    top: 20px;   
+}
+
+#anim:hover { 
+    animation: rotatethis 2s infinite linear;
+*/
+    /*    rotatethis is just a made up name we've given to our animation
+    infinite = as long as you have your mouse hovering over the word. with linear you are removing the easing so it'll be smoother/ having animation under anim hover means that the animation will only happen when youre overing*/
+}
+@keyframes rotatethis { 
+    0% {transform: rotate(0deg); background: orange}
+    25% {background: crimson;}
+    50% {background: cadetblue;}
+    75% {background: green;}
+    100% {transform: rotate(360deg); background: orange}
+    
+/*    it's important to start and end with the sme object and qualities otherwise it'll be a broken animation, not a smooth loop*/
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-10-31 16:17:58
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-10-31 16:37:49
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation shadow-pop-tr
+ * ----------------------------------------
+ */
+@-webkit-keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+            box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+            box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+            transform: translateX(-8px) translateY(8px);
+  }
+}
+@keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+            box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+            box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+            transform: translateX(-8px) translateY(8px);
+  }
+}
+
+.shadow-pop-tr {
+	-webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+/*
+    or if you want it to grow only when you hover, add hover on top of the class name and so the effect will only happen when you hover
+    .scale-up-center:hover {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+*/
+}
+
+#lib { 
+    width: 100px;
+    height: 100px;
+    background: crimson;
+    top: 100px;
+    left: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
